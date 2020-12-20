@@ -8,9 +8,7 @@ this.foodStock=0;
 
   updateFoodStock(foodStock){
   this.foodStock=foodStock
-
   }
-
    getFoodStock() {
      if(this.foodStock>0){
   return this.foodStock;
@@ -20,33 +18,24 @@ this.foodStock=0;
      }
    }
 
-   deductFood() {
-
+  deductFood() {
  if(this.foodStock>0){
       this.foodStock=this.foodStock-1;
      }
-   }
-
-   bedroom(){
+   }  
+  bedroom(){
     background(bed,550,500);  
 }
-  
 garden(){
     background(garden,0,0);
     
 } 
-
 washroom(){
     background(wc,550,500); 
 }
-
-
-
-
 display() {
 
- var x=80,y=100;
-      
+ var x=80,y=100;      
       imageMode(CENTER);
       image(this.image,220,220,50,50);
       
@@ -61,9 +50,5 @@ display() {
         }
       }
     }
-
-
-
-
    }
    
